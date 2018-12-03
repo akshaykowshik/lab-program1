@@ -23,12 +23,12 @@ i=0;
 j=0;
 k=0;
 print("The steps of the Find-s algorithm are\n",hypo);
-list = [];
+list2 = [];
 p=0;
 d=len(data[p])-1;
 for j in range(d):	
-	list.append(data[i][j]);
-hypo=list;
+	list2.append(data[i][j]);
+hypo=list2;
 i=1;
 for i in range(TotalExamples):	
 	for k in range(d):
@@ -43,10 +43,10 @@ i=i+1;
 
 
 print("\nThe maximally specific Find-s hypothesis for the given training examples is");
-list=[];
+list1=[];
 for i in range(d):
-	list.append(hypo[i]);
-print(list);
+	list1.append(hypo[i]);
+print(list1);
 
 
 
